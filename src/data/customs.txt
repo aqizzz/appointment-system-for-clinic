@@ -1,0 +1,6 @@
+userID,firstname,lastname,emailAddress,phoneNumber,password,avatar,address,city,province,country,postcode,contactName,contactPhone,paymentID
+User ID,First Name,Last Name,Email Address,Phone Number,Password,Avatar,Address,City,Province,Country,Postcode,Contact Name,Phone Number,Payment ID
+'C00003','John','Smith','john_smith@123.com','514-233-2333','123456','../../asset/upload/avater-sample.png',,,,,,
+'C00015','Mary','Wood','mary_wood@123.com','514-255-2555','456789',,,,,,,
+'C00325','Lucy','Allen','lucy_allen@123.com','514-299-2999','000000',,,,,,,
+'C00417','Linda','King','linda_king@123.com','514-277-27777','777777',,,,,,,

@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+#registration-container{
+    width: 100%;
+    margin:0 auto;
+    padding: 100px 0;
+}
+
+#reginfo{
+    margin:0 auto;
+}
+
+#registration-container{
+    width:fit-content;
+}
+
+#registration-container h3{
+    text-align:center;
+    padding:15px 0px;
+    border-bottom:2px solid #0156adcc;
+}
+
+#registration-container p{
+    background-color: #eefafe;
+    padding:10px;
+    text-align:center;
+    margin:10px 0px;
+}
+
+#reginfo{
+    font-size:110%;
+}
+
+#reginfo input{
+    border:1px solid #434343;
+    border-radius:5px;
+    margin: 5px 0 10px; 
+    font-size: 105%;
+    padding: 5px 10px;
+    width: 100%
+}
+
+#reginfo label{
+    color: #434343;
+    margin: 10px 15px 10px; 
+    
+}
+
+.table-container{
+    border-bottom:2px solid #0156adcc;
+}
+.table-container tr{
+    margin:10px 0px;
+}
+
+#registration-container table{
+    border-spacing:10px 10px;
+}
+
+#reginfo tr{
+    margin: 20px;
+
+}
+
+#agreecheck{
+    display: inline;
+}
+
+#agreecheck input{
+    margin: 10px 15px;
+}
+
+#submitRegistration, #cancelRegistration,#resetRegistration,#edit-button, #btn-avatarEdit{
+  padding: 10px 0;
+    background-color:#0156adcc;
+    color: white;
+}
+
+#subbutton{
+    text-align:center;
+}
+
+#subbutton input{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    margin: 10px 0 30px;
+}
+
+#firstSideTitle,#secondSideTitle{
+  width: 120%;
+  font-size: 1.1rem;
+}
+
+#avatar,#result-avatar{
+  width: 50%;
+  margin: 10px;
+}
+
+#personal-avatar{
+  size: 100px;
+  height: 50px;
+  margin: 10px;
+}
+
+#msgBoxReg {
+    color: red;
+    margin: 10px 20px;
+  }

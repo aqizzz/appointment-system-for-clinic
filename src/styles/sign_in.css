@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+
+
+#signin{
+    width: 100%;
+    padding:150px 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sign-in{
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#field{
+    width: 100%;
+    border:1px solid #434343;
+    border-radius:10px;
+    padding:20px;
+    color: #434343;
+   
+}
+
+#field legend{
+    width: 100%;
+    border-radius: 10px;
+    padding:5px 0;
+    font-size:1.5rem;
+    margin-top:-45px;
+    text-align: center;
+}
+
+#field legend{
+    width: 80%;
+    background-color: #317cc7;
+    color: white;
+    border-radius: 10px;
+    padding:5px 0;
+    font-size:1.5rem;
+    margin-top:-45px;
+    text-align: center;
+}
+
+#signinform{
+    margin-top: 40px;
+}
+
+.signbutton{
+    border:none;
+    background-color: #317cc7;
+    color:white;
+    padding:5px 20px;
+    font-size:1rem;
+    border-radius:5px;
+    
+}
+
+
+
+input{
+    width:90%;
+    border:1px solid #434343;
+    border-radius:5px;
+    padding: 5px 10px;
+    margin: 10px 20px;
+    font-size:120%;
+}
+
+
+label{
+    font-size:140%;
+    margin-left: 20px ;
+}
+
+#noaccount{
+   padding:10px 0 0 35px;
+}

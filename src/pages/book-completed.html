@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--
+Current Date: February 16, 2024
+File name: Smith's clinic html template
+-->
+<html lang="en">
+<head>
+    <!-- required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the page after booking on the Smith's Clinic website">
+    <meta name="author" content="Team-3 Leah Teresa Yapp / Yingying Wei / Fei Li / Shuting Tang">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon"  href="../assets/icons/clinic-64.png">
+    <link rel="icon" type="image/png"  href="../assets/icons/clinic-32.png">
+    <link rel="icon" type="image/png"  href="../assets/icons/clinic-96.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../assets/icons/clinic-180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/icons/clinic-192.png">
+    <link rel="icon" sizes="192x192" href="../assets/icons/clinic-clinic-192.png">
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- custom style -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/layout.css">
+    <link rel="stylesheet" href="../styles/custom.css">
+
+    <title>Smith's Clinic Home Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/jquery.js" ></script>
+    <script src="../scripts/main.js" defer></script>
+    <script src="../scripts/book-completed.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <!-- bootstrap header / navigation bar -->
+        <nav class="navbar navbar-expand-xl px-3 py-4">
+  
+          <a href="../index.html"><img src="../assets/images/clinic-logo-en.png" width="250" style="padding: 20px 30px 20px 0" alt="Clinic Logo" title="Home Page"></a>
+
+          <!-- Hamburger menu icon -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav" >
+              <ul class="navbar-nav">
+              <li class="nav-item active">
+                  <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="about-us.html">About us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" onclick="userCheck();">Appointment</a>
+              </li>
+              <li class="nav-item" id="loginBefore">
+                  <a class="nav-link" href="login.html" style="width: 130px;"><img id="login-image" src="../assets/icons/person-grey-40.png" style="width: 30px;" alt="Log in Here " title="Login">
+                  Log in</a>
+              </li>
+              </ul>
+          </div>
+
+        </nav>
+
+        
+        <!-- main -->
+        <main class="main">
+          <div id="container" >
+              <div class="upside">
+                  <div><h3>Your appointment is completed!</h3></div>
+                  <div class="row ">
+                  <div class="col-xl-1">&nbsp;</div>
+                  <div id="completedInfo" class="col-xl-7">
+                      <p>Service : <span id="serviceName">&nbsp;</span> <br>
+                      Appointment Number:<span id="appointmentId">&nbsp;</span><br>
+                      Date : <span id="apptDate">&nbsp;</span><br>
+                      Time : <span id="apptTime">&nbsp;</span>( Time zone: EST ) <br>
+                      Location : Smith's Clinic <br>
+                      Address : 320 St-Jean , local 2-C4 (2ième étage), <br>
+                      DDO, 1E3 5W7, Canada <br>
+  
+                      <br>
+                      *You can reschedule your appointment 3 days before your appointment date.
+                  </div>
+                  <div class="col-xl-3 ">
+                      <div class ="row" >
+                          <div class="booking-button d-flex align-items-center text-center"  >
+                              <button id="printButton" type="print" onclick="window.print()">Print</button>
+                          </div>
+                      </div>
+                      <div class ="row">
+                          <div class="booking-button d-flex align-items-center text-center"><button id="save-pdf-btn" type="print" onclick="window.print()">Save as PDF</button></div>
+                      </div>
+                      
+                  </div>
+                  <div class="col-xl-1">&nbsp;</div>
+                  </div>
+                </div>
+         
+              <div class="downside">
+                  <p><strong>Introduction:</strong></p>
+                  <p>There may be a delay between the time of your appointment and the time your blood is taken. Rest assured that we will try to respect your appointment time as much as possible.</p>
+                  <p>Please book one appointment even if you have multiple requests from different physicians.</p>
+                  <p>For any questions related to your appointment, please contact us at 514-233-2333.</p>
+                  <p><strong>Warning: Any requisition that is unidentified, not signed or incorrectly filled out could be refused.</strong></p>
+                  <p>If you do not have valid coverage with the Quebec Health Insurance plan (RAMQ), a Health Insurance Plan of another 
+                      Canadian province or valid coverage under the Interim Federal Health Program (PFSI), you will be required to pay for 
+                      these services</p>
+              </div>
+              
+          </div>
+        </main>
+
+        <!-- footer -->
+        <div id="footer" >
+            <div class="footer">
+                <div class="padding-row row " >                
+                    <div class="padding-column col-xl-9">
+                        <div class="row">
+                            <div class="col-xl-3">
+                                Opening Hour :
+                            </div>
+                            <div class="col-xl-9">
+                                08:00 ~ 18:00 (Monday to Friday) <br>
+                                09:00 ~ 15:00 (Saturday & Sunday) 
+                            </div>
+                        </div>
+                        <div class="row">&nbsp;</div>
+                        <div class="row" >  
+                            <div class="col-xl-12">
+                                Powered and secured by Team 3 - Group Super Woman<br>
+                                &copy;2024 Smith&#39;s Clinic.  
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-xl-2 icon-click">
+                        <div>
+                            <div class="row">&nbsp;</div>
+                            <a href="https://www.facebook.com/"><img class="share-icon" src="../assets/icons/facebook-white.png" width="40" alt="link to facebook" Title="link to facebook"></a>
+                            <a href="https://twitter.com/"><img class="share-icon" src="../assets/icons/twitter-white.png" width="45" alt="link to twitter" Title="link to twitter"></a>
+                            <a href="https://www.instagram.com/"><img class="share-icon" src="../assets/icons/instagram-white.png" width="40" alt="link to instagram" Title="link to instagram"></a>
+                            <div class="row">&nbsp;</div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

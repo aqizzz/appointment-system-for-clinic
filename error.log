@@ -1,0 +1,2 @@
+
+[31merror[39m: Error creating appointment: options is not defined {"service":"user-service","stack":"ReferenceError: options is not defined\n    at D:\\study\\John Abbot\\Exercise\\WEB SERVICES\\Web Services Final Project\\Group-Super-Women\\Team_3_JS_Project\\api\\appointment.js:48:60\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}

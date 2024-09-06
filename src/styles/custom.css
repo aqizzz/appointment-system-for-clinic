@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+
+
+
+/* Increase spacing between paragraphs */
+
+
+h2{
+    background-color: rgba(1, 86, 173, 0.1);
+}
+/* Style for team member section */
+.team-member {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.team-member h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+
+
+#loginbar{
+    margin: none;
+    width: 100%;
+    background-color: rgba(1, 86, 173, 0.1);
+}
+
+.left-column,.right-column {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.left-column h3,.right-column h3{
+    background: none;
+    border-bottom: 3px solid #0156adcc;
+}
+ 
+.booking-total {
+    padding: 20px 0;
+    border-Top: 3px solid #0156adcc;
+    border-bottom: 2px solid #0156adcc;
+}
+
+.booking-button {
+    width: 100%;
+    height:100%;
+}
+
+.booking-button button{
+    width: 100%;
+    height: 40px;
+    margin: 30px 0;
+    color: white;
+    background-color: #0156adcc;
+    border: none;
+    border-radius: 10px;
+}
+
+.booking-button button a{
+    text-decoration: none;
+    color: white;
+}
+
+.downside {
+    width: 100%;
+    padding: 30px 1%;
+    background-color: rgba(1, 86, 173, 0.1);
+}
+
+.downside p:nth-child(5):nth-child(5) strong{
+    color: red;
+}
+.upside h3{
+    background: none;
+    border-bottom: 3px solid #0156adcc;
+}
+
+.upside .booking-button button{
+    color: white;
+}
+
+.form-control{
+  margin: 20px 0;
+}
+

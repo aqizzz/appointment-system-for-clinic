@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+/* CSS Document for the home page */
+/* Script Date: February 16, 2024 */
+*/
+
+.navbar{
+    width: 100%;
+    height: 150px;
+    padding: 20px 0;
+    color: white;
+    border-radius: 10px 10px 0 0;
+
+}
+
+#header{
+    height: 210px;
+
+}
+
+
+.header-dec {
+    height: 38px;
+    background-color:hsla(210, 99%, 34%, 0.8);
+}
+
+.header-dec h3{
+    width: 45%;
+    color: hsla(210, 99%, 34%, 0.8);
+    padding:10px 0 10px 0;
+    font-size: 1.5rem;
+    font-weight: 550;
+    background-color: white;
+    text-align: center;
+    border-radius: 0 60px 0 0;
+    flex-wrap: wrap;
+}
+
+.header-dec-line {
+    margin-top: 10px;
+    width: 100%;
+    height: 12px;
+    background-color: #0156adcc;
+    border-radius: 0 0 10px 10px;
+}
+
+.header-dec-line p{
+    font-size: 1px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+

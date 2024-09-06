@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+ul {list-style-type: none;}
+
+
+#main-container{
+    width: 90%;
+    height: auto;
+    margin:0 5% 20px;
+    padding: 30px 2%;
+}
+
+#appointmentcontainer, #appointmentdetails{
+    width:100%;
+}
+
+main h2{
+  color: #0156adcc;
+}
+
+
+/* Month header */
+.month {
+  padding: 20px 25px;
+  width: 100%;
+  background: #5e89c6;
+  text-align: center;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 12.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 14.1%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.days li:hover{
+  cursor: pointer;
+}
+
+/* Highlight the "current" day */
+.days .active {
+  padding: 5px;
+  background: #5e89c6;
+  color: white !important
+}
+
+.days li .inactive{
+    color:rgba(194,196,209,0.8);
+}
+
+
+#choosetime p:last-child{
+    text-align:center;
+}
+
+#appointmenthead h2{
+    color: #0156adcc;
+    font-size: 30px;
+    padding: 5px 0;
+    margin: 0;
+    text-align: left;
+}
+
+.timetable li.active{
+    border:1px solid #5e89c6;
+    padding:8px;
+    text-align:center;
+    width:26%;
+    margin:5px;
+    display:inline-block;
+}
+
+.timetable li{
+  border:1px solid #5e89c6;
+  padding:8px;
+  text-align:center;
+  width:26%;
+  margin:5px;  
+  display:inline-block; 
+  cursor: pointer;
+}
+
+
+.timetable li.active:hover{
+  color: white;
+  border:1px solid #5e89c6;
+  background-color: #0156adcc;
+  padding:8px;
+  text-align:center;
+  width:26%;
+  margin:5px;
+  display:inline-block;
+}
+
+
+
+.timetable li.inactive{
+  color: #959595;
+  border:1px solid #d8d8d8;
+  background-color: rgba(247, 246, 246, 0.8);
+  padding:8px;
+  text-align:center;
+  width:26%;
+  margin:5px;  
+  display:inline-block;  
+}
+
+
+#select{
+    font-size:110%;
+    font-weight:bold;
+}
+
+#timezone{
+  color: #434343;
+  font-size: 0.8rem;
+}
+
+#serdet p{
+  margin: 1px 0;
+}
+
+
+#serdet{
+    width: 100%;
+    border-bottom:2px solid #62aaf1ed;
+    padding:0 10px 10px;
+}
+
+#make-appointment{
+    width: 100%;
+    background-color: #487bbf;
+    color:white;
+    font-size:120%;
+    padding:5px 70px;
+    border-radius:10px;
+    margin-top:30px;
+    border: none;
+  
+}
+
+.next:hover{
+  cursor:pointer;
+}
+
+.prev:hover{
+  cursor:pointer;
+}
+

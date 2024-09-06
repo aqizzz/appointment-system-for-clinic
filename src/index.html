@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--
+Updated Date: April 3, 2024
+File name: index.html
+-->
+<html lang="en">
+<head>
+    <!-- required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is homepage of Smith's Clinic website">
+    <meta name="author" content="Team-3 Leah Teresa Yapp / Yingying Wei / Fei Li / Shuting Tang">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon"  href="assets/icons/clinic-64.png">
+    <link rel="icon" type="image/png"  href="assets/icons/clinic-32.png">
+    <link rel="icon" type="image/png"  href="assets/icons/clinic-96.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/icons/clinic-180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/clinic-192.png">
+    <link rel="icon" sizes="192x192" href="assets/icons/clinic-192.png">
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+
+    <!-- custom style -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/services-details.css">
+
+    <title>Smith's Clinic Home Page</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/jquery.js" defer></script>
+    <script src="scripts/jquery.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <!-- bootstrap header / navigation bar -->
+        <div id="header" >     
+          <div class="header">
+            <nav class="navbar navbar-expand-xl px-3 py-4">
+                <a href="#"><img src="assets/images/clinic-logo-en.png" width="250" style="padding-left: 20px" alt="Clinic Logo" title="Home Page"></a>
+
+                <!-- Hamburger menu icon -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <!-- navbar links -->
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav" >
+                    <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="pages/services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="pages/about-us.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="pages/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#" onclick="userCheck()">Appointment</a>
+                    </li>
+                    <li class="nav-item" id="loginBefore">
+                        <a class="nav-link" href="pages/login.html" style="width: 130px;"><img id="login-image" src="assets/icons/person-grey-40.png" style="width: 30px;" alt="Log in Here " title="Login">  
+                        <span id="login-title">Log in</span></a>
+                    </li>
+                    
+                    </ul>
+                </div>
+            </nav>
+          </div>
+        </div>
+        
+        <!-- main -->
+        <main class="main">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide " data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner" >
+                  <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="assets/images/homepage-banner-1200x400.png" class="d-block w-100" alt="banner">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h1>The Most Professional Team</h1>
+                      <h2>The Most Professional Team</h2>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000" >
+                    <img src="assets/images/banner2-1200x400.png" class="d-block w-100" alt="banner">
+                    <div class="carousel-caption d-none d-md-block" >
+                      <h1>Utilizing State-of-the-art Technology</h1>
+                      <h2>Utilizing State-of-the-art Technology</h2>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="assets/images/banner3-1200x400.png" class="d-block w-100" alt="banner">
+                    <div class="carousel-caption d-none d-md-block" >
+                      <h1>Provide The Highest Quality Service</h1>
+                      <h2>Provide The Highest Quality Service</h2>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div id="service-container" class="content-container text-center" >
+                <div id="servicelist" class="row">
+                    <div class="col-lg-4">
+                        <a href="services.html"><img src="assets/images/thumbnail/family-doctor.png" alt="family doctor" title="family doctor"></a>
+                        <h5><a href="services.html">More Health Plans<br>We Accept</a></h5>
+                    </div>
+                
+                    <div class="col-lg-4">
+                        <a href="contact.html"><img src="assets/images/thumbnail/urgent-care.png" alt="contact" title="Contact"></a>
+                        <h5><a href="contact.html">Best Survices<br>in this Area</a></h5>
+                    
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="about-us.html"><img src="assets/images/thumbnail/diagnostic-test.png" alt="about us" title="About Us"></a>
+                        <h5><a href="about-us.html">Specialist<br>Doctors</a></h5>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- footer -->
+        <footer id="footer">
+            <div class="footer">
+                <div class="padding-row row " >                
+                    <div class="padding-column col-xl-9">
+                        <div class="row">
+                            <div class="col-xl-2">
+                                Open Hour:
+                            </div>
+                            <div class="col-xl-10">
+                                08:00 ~ 18:00 (Monday to Friday) <br>
+                                09:00 ~ 15:00 (Saturday & Sunday)
+                            </div>
+                        </div>
+                        <div class="row">&nbsp;</div>
+                        <div class="row" >  
+                            <div class="col-xl-12">
+                                Powered and secured by Team 3 - Group Super Woman - Group Super Woman<br>
+                                &copy;2024 Smith's Clinic. 
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-xl-2 icon-click">
+                        <div>
+                            <div class="row">&nbsp;</div>
+                            <a href="https://www.facebook.com/"><img class="share-icon" src="assets/icons/facebook-white.png" width="40" alt="link to facebook" Title="link to facebook"></a>
+                            <a href="https://twitter.com/"><img class="share-icon" src="assets/icons/twitter-white.png" width="45" alt="link to twitter" Title="link to twitter"></a>
+                            <a href="https://www.instagram.com/"><img class="share-icon" src="assets/icons/instagram-white.png" width="40" alt="link to instagram" Title="link to instagram"></a>
+                            <div class="row">&nbsp;</div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </footer>
+    </div>
+</body>
+</html>

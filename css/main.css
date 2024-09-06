@@ -1,0 +1,197 @@
+/* import files */
+body {
+  background: rgba(239, 252, 255, 0.768627451);
+  color: #434343;
+  font-family: Verdana, Tahoma, sans-serif;
+  font: 1rem;
+}
+
+#container {
+  clear: both;
+  width: 90%;
+  height: auto;
+  margin: 1% 5%;
+}
+
+#header {
+  height: 150px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  margin: 30px 0;
+}
+main .service-content p:hover {
+  color: white;
+  font-weight: 500;
+  background-color: rgba(1, 86, 173, 0.8);
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+}
+main #servicelist div a {
+  color: #4c4c4c;
+}
+main .service-content p a {
+  text-decoration: none;
+  color: white;
+}
+main .button-content p a {
+  text-decoration: none;
+  color: white;
+}
+main .button-content p {
+  width: 90%;
+  margin: 50px 5%;
+  padding: 6px;
+  height: 40px;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(1, 86, 173, 0.8);
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+}
+main .button-content button {
+  width: 90%;
+  margin: 50px 5%;
+  padding: 6px;
+  height: 40px;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(1, 86, 173, 0.8);
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+}
+main .button-click:hover {
+  transition: all 0s ease;
+  transform: translate(-2px, -2px);
+  filter: drop-shadow(2px 2px 2px white);
+}
+main h3 {
+  width: 100%;
+  color: rgba(1, 86, 173, 0.8);
+  margin: 20px 0;
+  padding: 10px 0;
+  font-size: 1.5rem;
+  background-color: rgba(1, 86, 173, 0.1);
+}
+main .content-container {
+  width: 100%;
+  margin: 10px 0px;
+  padding-top: 10px;
+}
+main .content-container h5 a {
+  text-decoration: none;
+}
+main .content-container .row:last-child div {
+  padding: 50px 0 50px 0;
+}
+main .content-container .row:last-child {
+  width: 100%;
+  margin: 10px 0 30px;
+}
+main .content-container .row:last-child div:first-child {
+  background-color: rgba(1, 86, 173, 0.2);
+}
+main .content-container .row:last-child div:first-child:hover {
+  filter: brightness(70%) opacity(1) grayscale(0);
+  cursor: pointer;
+}
+main .content-container .row:last-child div:nth-child(2):nth-child(2) {
+  background-color: rgba(1, 86, 173, 0.3);
+}
+main .content-container .row:last-child div:nth-child(2):nth-child(2):hover {
+  filter: brightness(70%) opacity(1) grayscale(0);
+  cursor: pointer;
+}
+main .content-container .row:last-child div:last-child {
+  background-color: rgba(1, 86, 173, 0.5);
+}
+main .content-container .row:last-child div:last-child:hover {
+  filter: brightness(70%) opacity(1) grayscale(0);
+  cursor: pointer;
+}
+main h1 {
+  position: absolute;
+  left: -22%;
+  bottom: -70%;
+  width: 145%;
+  height: 1600%;
+  margin: none;
+  background-color: rgba(194, 193, 193, 0.4941176471);
+}
+main a {
+  text-decoration: none;
+}
+main h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 100%;
+  font-size: 3rem;
+  margin-bottom: 15%;
+  color: rgba(0, 0, 0, 0.9764705882);
+}
+main h5 {
+  margin: 20px;
+  padding: 5px;
+  color: rgba(1, 86, 173, 0.8);
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  padding: 25px 0;
+  color: white;
+  border-radius: 10px;
+  background-color: rgba(1, 86, 173, 0.8);
+}
+
+#footer {
+  width: 100%;
+  border-radius: 10px;
+  background: url("../assets/images/homepage-banner.png") no-repeat;
+  background-size: cover;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  padding: 25px 0;
+  color: white;
+  border-radius: 10px;
+  background-color: rgba(1, 86, 173, 0.8);
+}
+.footer .padding-row {
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .icon-click {
+  display: flex;
+  align-items: center;
+}
+.footer .image-click {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.footer #appointment-button {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+}
+.footer #appointment-button:hover, .footer .share-icon:hover, .footer .navbar li a:hover {
+  transition: all 0s ease;
+  transform: translate(-2px, -2px);
+  filter: drop-shadow(2px 2px 2px rgba(1, 86, 173, 0.8));
+}/*# sourceMappingURL=main.css.map */

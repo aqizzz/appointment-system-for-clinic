@@ -1,0 +1,257 @@
+/* import files */
+@import '../scss/variables';
+
+body {
+  background: #effcffc4;
+  color:$text-color;
+  font-family:Verdana, Tahoma, sans-serif;
+  font: 1rem;
+}
+
+@function weight($weight-name){
+  @return map-get($font-weights, $weight-name);
+}
+
+
+@mixin theme($light-theme:true){
+  @if $light-theme {
+      background: lighten($color: $accent-color, $amount: 100%);
+      color: darken($color: $text-color, $amount: 100%);
+      border-color: $dark;
+  }
+}
+
+#container {
+  clear: both;
+  width: 90%;
+  height: auto;
+  margin: 1% 5%;
+}
+
+
+#header{
+  height: 150px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+
+main {
+
+  width: 100%;
+  height: auto;
+  background-color: white;
+  margin: 30px 0;
+  
+  .service-content {
+
+
+    p:hover {
+      color:white;
+      font-weight: weight(medium);
+      background-color: $primary-color;
+      border: none;
+      border-radius: 10px;
+      text-align: center;
+    }
+  }
+
+
+  #servicelist div a {
+    color: #4c4c4c
+  }
+  .service-content p a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .button-content p a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .button-content p{
+      width: 90%;
+      margin: 50px 5%;
+      padding: 6px;
+      height: 40px;
+      color:white;
+      font-weight: bold;
+      background-color: #0156adcc;
+      border: none;
+      border-radius: 10px;
+      text-align: center;
+  }
+
+ 
+  .button-content button{
+    width: 90%;
+      margin: 50px 5%;
+      padding: 6px;
+      height: 40px;
+      color:white;
+      font-weight: bold;
+      background-color: #0156adcc;
+      border: none;
+      border-radius: 10px;
+      text-align: center;
+  }
+  
+
+
+  .button-click:hover{
+    transition: all 0s ease;
+    transform: translate(-2px,-2px);
+    filter:drop-shadow(2px 2px 2px white);
+  }
+
+  h3{
+    width: 100%;
+    color: #0156adcc;
+    margin: 20px 0;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    background-color: rgba(1, 86, 173, 0.1);
+    font-weight: weight(-bold);
+  }
+
+
+  .content-container{
+    width: 100%;
+    margin: 10px 0px;
+    padding-top: 10px;
+  }
+
+  .content-container h5 a{
+      text-decoration: none;
+  }
+
+  .content-container .row:last-child div{
+      padding: 50px 0 50px 0;
+  }
+
+  .content-container .row:last-child{
+      width: 100%;
+      margin: 10px 0 30px;
+  }
+  
+  .content-container .row:last-child div:first-child{
+      background-color: rgba(1, 86, 173, 0.2);
+  }
+
+  .content-container .row:last-child div:first-child:hover{
+      filter: brightness(70%) opacity(1) grayscale(0);
+      cursor: pointer;
+  }
+
+  .content-container .row:last-child div:nth-child(2):nth-child(2){
+      background-color: rgba(1, 86, 173, 0.3);
+  }
+
+  .content-container .row:last-child div:nth-child(2):nth-child(2):hover{
+      filter: brightness(70%) opacity(1) grayscale(0);
+      cursor: pointer;
+  }
+
+  .content-container .row:last-child div:last-child{
+      background-color: rgba(1, 86, 173, 0.5);
+  }
+
+  .content-container .row:last-child div:last-child:hover{
+      filter: brightness(70%) opacity(1) grayscale(0);
+      cursor: pointer;
+  }
+  h1{
+      position: absolute;
+      left: -22%;
+      bottom: -70%;
+      width: 145%;
+      height: 1600%;
+      margin: none;
+      background-color: #c2c1c17e;
+  }
+
+  a{
+      text-decoration: none;
+  }
+
+  h2{
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      width: 100%;
+      font-size: 3rem;
+      margin-bottom: 15%;
+      color:#000000f9;
+  }
+
+  h5{
+      margin: 20px;
+      padding: 5px;
+      color: $primary-color;
+  }
+}
+
+.footer{
+  width: 100%;
+  height: auto;
+  padding: 25px 0;
+  color: white;
+  border-radius: 10px;
+  background-color:$primary-color;
+}
+
+#footer{
+  width: 100%;
+  border-radius: 10px;
+  background: url('../assets/images/homepage-banner.png') no-repeat;
+  background-size: cover;
+}
+
+.footer{
+  width: 100%;
+  height: auto;
+  padding: 25px 0;
+  color: white;
+  border-radius: 10px;
+  background-color: #0156adcc; 
+
+  .padding-row{
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .icon-click{
+      display: flex;
+      align-items: center;
+  }
+
+  .image-click{
+      display: flex;
+      justify-content: right;
+      align-items: center;
+  }
+  #appointment-button{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    border: none; 
+  }
+
+
+  #appointment-button:hover,.share-icon:hover,.navbar li a:hover{
+      transition: all 0s ease;
+      transform: translate(-2px,-2px);
+      filter:drop-shadow(2px 2px 2px #0156adcc);
+  }
+
+}
+
+
+
+

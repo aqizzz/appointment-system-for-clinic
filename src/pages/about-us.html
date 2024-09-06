@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!--
+Current Date: February 16, 2024
+File name: Smith's clinic html template
+-->
+<html lang="en">
+<head>
+    <!-- required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is about-us page of Smith's Clinic website">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon"  href="../assets/icons/clinic-64.png">
+    <link rel="icon" type="image/png"  href="../assets/icons/clinic-32.png">
+    <link rel="icon" type="image/png"  href="../assets/icons/clinic-96.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../assets/icons/clinic-180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/icons/clinic-192.png">
+    <link rel="icon" sizes="192x192" href="../assets/icons/clinic-192.png">
+
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- custom style -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/layout.css">
+    <link rel="stylesheet" href="../styles/layout-special.css">
+    <link rel="stylesheet" href="../styles/services-details.css">
+  
+    <title>Clinique Smith - About-Us</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/jquery.js" ></script>
+    <script src="../scripts/main.js" defer></script>
+
+</head>
+<body >
+   
+    <div id="container" >
+
+        <!-- bootstrap header / navigation bar -->
+        <div id="header" >     
+          <div class="header">
+            <nav class="navbar navbar-expand-xl px-3 py-4">
+                <a href="../index.html"><img src="../assets/images/clinic-logo-en.png" width="250" style="padding-left: 20px" alt="Clinic Logo" title="Home Page"></a>
+
+                <!-- Hamburger menu icon -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <!-- navbar links -->
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav" >
+                    <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="about-us.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" onclick="userCheck();">Appointment</a>
+                    </li>
+                    <li class="nav-item" id="loginBefore">
+                        <a class="nav-link" href="login.html" style="width: 130px;"><img id="login-image" src="../assets/icons/person-grey-40.png" style="width: 30px;" alt="Log in Here " title="Login">  
+                        <span id="login-title">Log in</span></a>
+                    </li>
+                    
+                    </ul>
+                </div>
+            </nav>
+            <div class="header-dec">
+              <h3>About Us</h3>
+          </div>
+        <div class="header-dec-line"><p>Smith&apos;s Clinic</p></div>
+        </div>
+      </div>
+        
+        <!-- main -->
+        <main class="main">
+            <div class ="service-container">
+              <div class="row">
+                  <div class="text-center"><h3 class="display-6">About Our Clinic</h3></div>
+                    <div><img src="../assets/images/Clinic-600.png" class="img w-100" alt="Doctor picture"></div>
+                    <div class="upside">
+                        <p><Strong>W</Strong>elcome to Smith Clinic, where exceptional healthcare meets compassionate service. 
+                        Conveniently located in the heart of the community, Smith Clinic has been a cornerstone of medical excellence for over two decades. 
+                        Our clinic is led by a team of highly skilled and experienced healthcare professionals, including physicians, nurses, and support staff, who are dedicated to providing personalized care to each patient.</p>
+                        <p><Strong>A</Strong>t Smith Clinic, we offer a comprehensive range of medical services to meet the diverse needs of our patients. From routine check-ups and preventive care to management of chronic conditions and minor surgical procedures, we are committed to ensuring that you receive the highest quality of care possible.</p>
+                        <p><Strong>O</Strong>ur state-of-the-art facility is equipped with the latest medical technology and diagnostic equipment to accurately diagnose and treat a wide range of medical conditions. We also prioritize patient comfort and convenience, withflexible scheduling options and a warm, welcoming atmosphere.<br>
+                        At Smith Clinic, we understand that navigating the healthcare system can be overwhelming. Experience the Smith Clinic difference for yourself. Schedule an appointment with us today and take the first steptowards better health and wellness. We look forward to serving you and your family for many years to come.
+                    </div> 
+              </div>
+
+              <div class="row">
+                <div class="text-center"><h3 class="display-6 text-center mb-5">Our teams</h3></div>
+              </div>
+                
+              <div class="row downside-block">
+                  <div class="col-xl-6 d-flex justify-content-center"><img src="../assets/images/family-doctor-m.png" alt="doctor" class="img-thumbnail ">
+                  </div>
+  
+                  <div class="col-xl-6 ">
+                      <div class="text-layout">
+                          <div><h4>Dr. John Smith</h4></div>
+                          <div>
+                              <p>Dr. John Smith is a seasoned family physician with over 
+                                  20 years of experience. He holds an MD degree and 
+                                  completed his residency in family medicine at a 
+                                  prestigious hospital. Dr. Smith is dedicated to providing 
+                                  compassionate and comprehensive healthcare, 
+                                  specializing in preventive care, chronic disease 
+                                  management, and minor surgical procedures. He values 
+                                  open communication and collaboration, ensuring each 
+                                  patient receives personalized care. Dr. Smith is actively 
+                                  involved in medical education and community outreach, 
+                                  reflecting his commitment to promoting health and well being. With his expertise and genuine dedication, Dr. 
+                                  John Smith is a trusted healthcare provider in the 
+                                  community. </p>
+                          </div>
+                      </div>
+                  </div>
+                
+              </div>
+              <hr>
+              <div class="row downside-block">
+                  <div class="col-xl-6 ">
+                      <div  class="text-layout">
+                      <div><h4>Dr. Nancy Smith</h4>
+                      </div>
+                      <div><p>Dr. Nancy Smith, an experienced family physician with a 
+                          diverse background. Holding an MD degree, Dr. Smith 
+                          completed her residency training in family medicine at a 
+                          renowned institution. With over a decade of practice, she 
+                          specializes in preventive care, chronic disease 
+                          management, and women's health. Dr. Smith is known for 
+                          her compassionate approach and commitment to patient 
+                          well-being. She values building strong doctor-patient 
+                          relationships based on trust and open communication. 
+                          Actively involved in community health initiatives, Dr. Smith 
+                          is dedicated to promoting overall wellness. Trust Dr. 
+                          Nancy Smith for personalized, comprehensive care 
+                          tailored to your needs.</p>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="col-xl-6 d-flex justify-content-center">
+                      <img src="../assets/images/urgent-care-m.png" alt="doctor" class="img-thumbnail">
+                      
+                  </div>
+              </div>
+            </div>
+        </main>
+
+
+        <!-- footer -->
+        <div id="footer" >
+            <div class="footer">
+                <div class="padding-row row " >                
+                    <div class="padding-column col-xl-9">
+                        <div class="row">
+                            <div class="col-xl-2">
+                                Open Hour:
+                            </div>
+                            <div class="col-xl-10">
+                                08:00 ~ 18:00 (Monday to Friday) <br>
+                                09:00 ~ 15:00 (Saturday & Sunday)
+                            </div>
+                        </div>
+                        <div class="row">&nbsp;</div>
+                        <div class="row" >  
+                            <div class="col-xl-12">
+                                Powered and secured by Team 3 - Group Super Woman / Group Super Woman<br>
+                                &copy;2024 Smith's Clinic. 
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-xl-2 icon-click">
+                        <div>
+                            <div class="row">&nbsp;</div>
+                            <a href="https://www.facebook.com/"><img class="share-icon" src="../assets/icons/facebook-white.png" width="40" alt="link to facebook" Title="link to facebook"></a>
+                            <a href="https://twitter.com/"><img class="share-icon" src="../assets/icons/twitter-white.png" width="45" alt="link to twitter" Title="link to twitter"></a>
+                            <a href="https://www.instagram.com/"><img class="share-icon" src="../assets/icons/instagram-white.png" width="40" alt="link to instagram" Title="link to instagram"></a>
+                            <div class="row">&nbsp;</div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
